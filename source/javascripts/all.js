@@ -1,15 +1,15 @@
 // This is where it all goes :)
 
-require('_lib.js');
+require("expose?$!jquery");
 
 var _    = require("lodash");
 var team = require('_test.js');
-var ut   = _.uniq(team);
-var rut  = _.take(ut, 3)
+var uniqt   = _.uniq(team);
+var take3t  = _.take(uniqt, 3)
 
 console.log('full team list:  ' + team);
-console.log('Lodash removed redundancies:  ' + ut);
-console.log('Lodash took 3:  ' + rut);
+console.log('Lodash removed redundancies:  ' + uniqt);
+console.log('Lodash took 3:  ' + take3t);
 console.log( "Exposed jQuery version: " + $.fn.jquery );
 
 $(function() {
